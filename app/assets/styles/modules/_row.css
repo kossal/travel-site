@@ -2,22 +2,21 @@
 
     @mixin clearfix;
 
-    [class*="row__"] > * {
-        margin: 0 auto;
+    &__b-margin-until-medium {
+        margin-bottom: 3rem;
     }
 
     @mixin atMedium {
 
-        $gutters: 4rem;
+        &__b-margin-until-medium {
+            margin-bottom: 0;
+        }
         
         &--gutters {
-            margin-right: -$gutters;
-            overflow: hidden;
+            @mixin gridGutter;
 
-            & > [class*="row__"] {
-                padding-right: $gutters;
-                float: left;
-                margin: 0 0;
+            &-large {
+                @mixin gridGutter 10rem;
             }
         }
 
@@ -33,6 +32,9 @@
         &__medium-10 {width: 83.33%;}
         &__medium-11 {width: 91.66%;}
         &__medium-12 {width: 100%;}
+
+        &__medium-4--larger {width: 37%;}
+        &__medium-8--smaller {width: 63%;}
     }
 
 }

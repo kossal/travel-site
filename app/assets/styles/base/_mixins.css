@@ -30,3 +30,14 @@
         zoom: 1;
     }
 }
+
+@define-mixin gridGutter $type: 4rem {
+    margin-right: -$type;
+    overflow: hidden;
+
+    & > [class*="row__"] {
+        padding-right: $type;
+        float: left;
+        margin: 0 0;
+    }
+}
