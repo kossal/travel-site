@@ -33,10 +33,9 @@
 
 @define-mixin gridGutter $type: 4rem {
     margin-right: -$type;
-    overflow: hidden;
 
     & > [class*="row__"] {
-        float: left;
         padding-right: $type;
     }
+    
 }

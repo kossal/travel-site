@@ -7,10 +7,19 @@
         padding: 0 0;
     }
 
+    &--no-padding-until-medium {
+        padding: 0 0;
+    }
+
     @mixin atMedium {
         &--medium {
             max-width: 97.6rem;
         }
+
+        &--no-padding-until-medium {
+            padding: 0 18px;
+        }
+
     }
 
     &--b-margin-small {
