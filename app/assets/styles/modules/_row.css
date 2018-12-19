@@ -17,6 +17,18 @@
             &-large {
                 @mixin gridGutter 10rem;
             }
+
+            &-small {
+                @mixin gridGutter 4.5rem;
+            }
+        }
+
+        &--t-padding {
+            padding-top: 8rem;
+        }
+
+        & > [class*="row__medium"] {
+            float: left;
         }
 
         &__medium-1 {width: calc(1 * (100% / 12));}
@@ -34,6 +46,15 @@
 
         &__medium-4--larger {width: 37%;}
         &__medium-8--smaller {width: 63%;}
+
+        &--flex {
+            display: flex;
+        }
+
+    }
+
+    &--medium-t-margin-big {
+        margin-top: 13rem;
     }
 
 }

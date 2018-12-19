@@ -20,12 +20,21 @@
             display: inline-block;
             margin: 0;
             margin: 0 .8rem 0 0;
+
+            &--d10 {
+                vertical-align: -10%;
+            }
+
+            &--d20 {
+                vertical-align: -20%;
+            }
+
         }
 
-        &--middle {
-            vertical-align: -10%;
-        }
+    }
 
+    &--blue {
+        color: $mainBlue;
     }
 
 }
