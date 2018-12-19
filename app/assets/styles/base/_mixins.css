@@ -36,8 +36,7 @@
     overflow: hidden;
 
     & > [class*="row__"] {
-        padding-right: $type;
         float: left;
-        margin: 0 0;
+        padding-right: $type;
     }
 }
