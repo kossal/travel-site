@@ -1,0 +1,16 @@
+/* Do not edit modules/_sprites.css directly. It´s generated automatically by gulp and gulp-svg-sprite
+To modify this content, go to gulp/templates/sprites.css */
+
+{{#shapes}}
+    {{#first}}
+    [class*="icon--"] {
+        background-image: url('../../assets/images/sprites/{{{sprite}}}');
+    }
+    {{/first}}
+    .icon--{{base}} {
+        width: {{width.outer}}px;
+        height: {{height.outer}}px;
+        background-position: {{position.relative.xy}};
+    }
+{{/shapes}}
+
